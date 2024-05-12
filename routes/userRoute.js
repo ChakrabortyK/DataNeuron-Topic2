@@ -8,8 +8,8 @@ import express from "express";
 
 const router = express.Router();
 
-router.route("/getcount/:username").get(getCount);
-router.route("/add").post(addData);
-router.route("/update").patch(updateData);
+router.route("/getcount/:username").get(getCount); //time:88 ms
+router.route("/add").post(addData); //time:322 ms
+router.route("/update").patch(updateData); //time:80 ms
 
 export default router;
